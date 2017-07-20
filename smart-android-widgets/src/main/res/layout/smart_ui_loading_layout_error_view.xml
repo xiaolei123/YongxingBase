@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/smart_ui_loading_layout_ic_error"
+        android:text="@string/smart_ui_loading_layout_on_error"
+        android:textColor="@color/smart_ui_loading_layout_text_color"
+        android:textSize="@dimen/smart_ui_loading_layout_text_size" />
+
+    <Button
+        android:id="@+id/btn_error"
+        android:layout_width="@dimen/smart_ui_loading_layout_error_btn_width"
+        android:layout_height="@dimen/smart_ui_loading_layout_error_btn_height"
+        android:layout_below="@id/tv_error_message"
+        android:layout_centerHorizontal="true"
+        android:text="@string/smart_ui_loading_layout_try_refresh"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/smart_ui_loading_layout_text_size"
+        android:layout_marginTop="@dimen/smart_ui_loading_layout_error_btn_margin_top"
+        android:background="@drawable/smart_ui_loading_layout_bg_error_btn"/>
+</RelativeLayout>

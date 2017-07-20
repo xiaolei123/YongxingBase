@@ -1,0 +1,17 @@
+<resources>
+    <!-- SmartPullableLayout -->
+    <dimen name="smart_ui_pullable_padding">20dp</dimen>
+    <dimen name="smart_ui_pullable_item_size">20dp</dimen>
+    <dimen name="smart_ui_pullable_item_margin">10dp</dimen>
+    <dimen name="smart_ui_effective_pull_range">65dp</dimen>
+    <dimen name="smart_ui_ignorable_pull_range">5dp</dimen>
+
+    <!-- SmartLoadingLayout -->
+    <dimen name="smart_ui_loading_layout_text_size">16sp</dimen>
+    <dimen name="smart_ui_loading_layout_dots_text_size">40sp</dimen>>
+    <dimen name="smart_ui_loading_layout_error_btn_radius">15dp</dimen>
+    <dimen name="smart_ui_loading_layout_error_btn_margin_top">12dp</dimen>
+    <dimen name="smart_ui_loading_layout_error_btn_margin">12dp</dimen>
+    <dimen name="smart_ui_loading_layout_error_btn_height">40dp</dimen>
+    <dimen name="smart_ui_loading_layout_error_btn_width">120dp</dimen>
+</resources>

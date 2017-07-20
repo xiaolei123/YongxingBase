@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'//这里添加
+apply plugin: 'kotlin-android-extensions'//这里添加
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.0"
+    //正式环境
+    def API_RELEASE_HOST = "\"https://www.baidu.com/\""
+    //开发环境
+    def API_DEV_HOST = "\"https://www.baidu.com/\""
+    defaultConfig {
+        applicationId "com.yongxing.yongxingbase"
+        minSdkVersion 17
+        targetSdkVersion 25
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        buildConfigField("String", "API_HOST", "${API_DEV_HOST}")
+    }
+    signingConfigs {
+        debug {
+            storeFile file('yongxingKeyStore.jks')
+            storePassword "yongxing"
+            keyAlias "yongxing"
+            keyPassword "yongxing"
+        }
+    }
+    buildTypes { 
+        release { 
+            buildConfigField "String", "API_HOST", "${API_RELEASE_HOST}"
+            minifyEnabled false
+            zipAlignEnabled true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            debuggable true
+            minifyEnabled false
+            zipAlignEnabled true
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.github.xiaolei123:EasyFreamTest:1.0.2'
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile project(':smart-android-widgets')
+    
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"//主要是这两个依赖
+}

@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@style/AnimationTheme</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="AnimationTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/on_activity_open</item>
+        <item name="android:activityOpenExitAnimation">@anim/on_activity_puse</item>
+        <item name="android:activityCloseEnterAnimation">@anim/on_activity_reopen</item>
+        <item name="android:activityCloseExitAnimation">@anim/on_activity_close</item>
+        <item name="android:taskOpenEnterAnimation">@anim/on_activity_open</item>
+        <item name="android:taskOpenExitAnimation">@anim/on_activity_puse</item>
+        <item name="android:taskCloseEnterAnimation">@anim/on_activity_reopen</item>
+        <item name="android:taskCloseExitAnimation">@anim/on_activity_close</item>
+        <!-- 下面的是实验性属性 -->
+        <item name="android:taskToFrontEnterAnimation">@anim/on_activity_open</item>
+        <item name="android:taskToFrontExitAnimation">@anim/on_activity_close</item>
+        <item name="android:taskToBackEnterAnimation">@anim/on_activity_reopen</item>
+        <item name="android:taskToBackExitAnimation">@anim/on_activity_close</item>
+    </style>
+    
+    <style name="mainRadioButton">
+        <item name="android:textColor">@drawable/selector_main_radiobutton_color</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <!--<item name="android:paddingTop">7dp</item>-->
+        <!--<item name="android:paddingBottom">3dp</item>-->
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+    </style>
+</resources>

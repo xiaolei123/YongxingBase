@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">永星Base</string>
+    
+    
+    
+    
+    
+    <!--Manifest字符串解释-->
+    <string name="page_launcher">启动页面</string>
+    <string name="page_main">主界面</string>
+</resources>

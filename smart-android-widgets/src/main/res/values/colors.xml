@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- theme -->
+    <color name="colorPrimary">#515151</color>
+    <color name="colorPrimaryDark">#707070</color>
+    <!-- custom -->
+    <color name="smart_ui_pullable_layout_text_color">#707070</color>
+    <color name="smart_ui_loading_layout_text_color">#515151</color>
+</resources>
